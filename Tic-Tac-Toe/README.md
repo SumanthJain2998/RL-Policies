@@ -2,8 +2,15 @@
 
 In this Project an RL agent was trained to play Tic-Tac-Toe with ___Temporal Difference Learning___  
 <p align="center">
-  <img width="566" alt="Screenshot 2025-01-23 at 11 08 59 PM" src="https://github.com/user-attachments/assets/7d16e2f3-2306-47a9-a5d8-749fb4ce9a46" />  
-</p>  
+ <img width="546" alt="Screenshot 2025-01-23 at 11 56 26 PM" src="https://github.com/user-attachments/assets/ef55d98c-e97a-48c7-bf97-352a45278eb4" />
+</p> 
+
+<p align="center">
+<em>
+  A sequence of tic-tac-toe moves. The solid black lines represent the moves taken during a game; the dashed lines represent moves that we (our reinforcement learning player) considered but did not make. The * indicates the move currently estimated to be the best. Our second move was an exploratory move, meaning that it was taken even though another sibling move, the one leading to e⇤, was ranked higher. Exploratory moves do not result in any learning, but each of our other moves does, causing updates as suggested by the red arrows in which estimated values are moved up the tree from later nodes to earlier nodes as detailed in the text.
+</em>  
+</p>
+&nbsp;  
 
 If we let \$S_t\$ denote the state before greedy moove, and \$S_{t+1}\$ the state after that move and then update the estimated value of \$S_t\$, denoted \$V(S_t)\$  
 ```math
